@@ -46,7 +46,33 @@ export default () => {
 
         </section>
 
-        <section className="h-full bg-primary" id="about">
+        <section className="h-full bg-primary text-white flex" id="about">
+          <div className="w-1/2 h-2/3 m-auto grid grid-cols-3 gap-x-8">
+
+            <h1 className="text-4xl font-semibold text-right">About Us</h1>
+            <p className="col-span-2 text-justify">
+              TAMIS is a modern management information system hoping to revolutionise the way that schools operate.
+              Built with a finely tuned combination of both reliable, well-proven software architecture as well as new, innovative solutions, TAMIS aims to change the game with its shared goals in both usability and efficiency.
+            </p>
+
+            <h2 className="text-3xl text-right">Who Are We?</h2>
+            <div className="col-span-2 flex flex-col">
+              <p className="text-justify">
+                I started developing TAMIS in late 2021.
+                Having recently starting to work in a school and having sat my A-Levels the previous summer I had expirience of other platforms as both a student and a member of staff.
+                Frustrated with some of the floors of other solutions I had a moan in the staff room one day and got told to "make one myself".
+                So I did!
+              </p>
+              <em className="font-light text-right">Henry Bersey, Creator of TAMIS</em>
+            </div>
+
+            <h2 className="text-3xl text-right">What's Next?</h2>
+            <p className="col-span-2 text-justify">
+              Currently, TAMIS is in the process of implementing the final stages of development before begging the first stage of user testing, Pre-Alpha v0.1.0.
+              Additionally, we are in the process of becoming a registered, limited, company as well as doing lots of boring legal stuff like trademarking, copywriting and all that jazz.
+              Most importantly the TAMIS team are excited about the future of what started as a project but is now forming into a reality.  
+            </p>
+          </div>
 
         </section>
 
