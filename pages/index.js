@@ -11,7 +11,7 @@ export default () => {
       </Head>
 
       <header className="h-12 w-screen bg-primary flex items-center px-2">
-        <Link href="#">
+        <Link href="#home">
           <img src="/Logo LG NO BG.png" className="object-contain h-full cursor-pointer" />
         </Link>
 
@@ -22,17 +22,31 @@ export default () => {
         </Link>
       </header>
 
-      <main className="overflow-y-scroll flex-grow">
+      <main className="overflow-y-scroll flex-grow scroll-smooth">
 
-        <section className="h-full relative">
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-8 text-center">
-            <h1 className="text-7xl text-primary">TAMIS</h1>
-            <p className="text-lg text-gray-500">Accademic Management Information System</p>
+        <section className="h-full relative" id="home">
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center space-y-4">
+            <div>
+              <h1 className="text-7xl text-primary">TAMIS</h1>
+              <p className="text-lg text-gray-500">Accademic Management Information System</p>
+            </div>
+            <div className="flex justify-center space-x-2">
+              <Link href="#about">
+                <a className="border border-primary rounded text-gray-600 px-1 py-0.5 text-lg hover:bg-primary/5">
+                  Learn More
+                </a>
+              </Link>
+              <Link href="#pre-alpha">
+                <a className="border border-primary rounded text-gray-600 px-1 py-0.5 text-lg hover:bg-primary/5">
+                  Pre-Alpha
+                </a>
+              </Link>
+            </div>
           </div>
 
         </section>
 
-        <section className="h-full bg-primary">
+        <section className="h-full bg-primary" id="about">
 
         </section>
 
