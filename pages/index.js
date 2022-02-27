@@ -1,7 +1,16 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { useRef } from "react"
 
 export default () => {
+
+  const mainEl = useRef(null);
+
+  const handleGoToHome = () => {
+    mainEl.current.scrollTo(0, 0);
+    window.location.href = "#";
+  }
+
   return (
     <div className="h-screen w-screen flex flex-col">
       <Head>
@@ -11,9 +20,9 @@ export default () => {
       </Head>
 
       <header className="h-12 w-screen bg-primary flex items-center px-2">
-        <Link href="#home">
+        <button className="h-full" onClick={handleGoToHome}>
           <img src="/Logo LG NO BG.png" className="object-contain h-full cursor-pointer" />
-        </Link>
+        </button>
 
         {/* <div className="flex-grow" />
 
@@ -22,9 +31,9 @@ export default () => {
         </Link> */}
       </header>
 
-      <main className="overflow-y-scroll snap-y snap-proximity lg:snap-mandatory flex-grow scroll-smooth">
+      <main className="overflow-y-scroll snap-y snap-proximity lg:snap-mandatory flex-grow scroll-smooth" ref={mainEl}>
 
-        <section className="h-full relative snap-center" id="home">
+        <section className="h-full relative snap-center">
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center space-y-4">
             <div>
               <h1 className="text-7xl text-primary">TAMIS</h1>
