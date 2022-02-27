@@ -32,12 +32,12 @@ export default () => {
             </div>
             <div className="flex justify-center space-x-2">
               <Link href="#about">
-                <a className="border border-primary rounded text-gray-600 px-1 py-0.5 text-lg hover:bg-primary/5">
+                <a className="rounded px-1 py-0.5 text-lg shadow bg-primary text-white">
                   Learn More
                 </a>
               </Link>
               <Link href="#pre-alpha">
-                <a className="border border-primary rounded text-gray-600 px-1 py-0.5 text-lg hover:bg-primary/5">
+                <a className="rounded px-1 py-0.5 text-lg shadow bg-primary text-white">
                   Pre-Alpha
                 </a>
               </Link>
