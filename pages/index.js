@@ -22,9 +22,9 @@ export default () => {
         </Link>
       </header>
 
-      <main className="overflow-y-scroll flex-grow scroll-smooth">
+      <main className="overflow-y-scroll snap-y snap-mandatory flex-grow scroll-smooth">
 
-        <section className="h-full relative" id="home">
+        <section className="h-full relative snap-center" id="home">
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center space-y-4">
             <div>
               <h1 className="text-7xl text-primary">TAMIS</h1>
@@ -46,7 +46,7 @@ export default () => {
 
         </section>
 
-        <section className="h-full bg-primary text-white flex" id="about">
+        <section className="h-full bg-primary text-white flex snap-center" id="about">
           <div className="w-1/2 h-2/3 m-auto grid grid-cols-3 gap-x-8">
 
             <h1 className="text-4xl font-semibold text-right">About Us</h1>
@@ -67,17 +67,34 @@ export default () => {
             </div>
 
             <h2 className="text-3xl text-right">What's Next?</h2>
-            <p className="col-span-2 text-justify">
-              Currently, TAMIS is in the process of implementing the final stages of development before begging the first stage of user testing, Pre-Alpha v0.1.0.
-              Additionally, we are in the process of becoming a registered, limited, company as well as doing lots of boring legal stuff like trademarking, copywriting and all that jazz.
-              Most importantly the TAMIS team are excited about the future of what started as a project but is now forming into a reality.  
+            <div className="col-span-2 flex flex-col">
+              <p className="text-justify">
+                Currently, TAMIS is in the process of implementing the final stages of development before begging the first stage of user testing, Pre-Alpha v0.1.0.
+                Additionally, we are in the process of becoming a registered, limited, company as well as doing lots of boring legal stuff like trademarking, copywriting and all that jazz.
+                Most importantly the TAMIS team are excited about the future of what started as a project but is now forming into a reality.
+              </p>
+              <Link href="#pre-alpha">
+                <a className="text-right pt-2 font-medium">Read More About Pre-Alpha.</a>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="h-full flex snap-center text-gray-500" id="pre-alpha">
+          <div className="m-auto w-2/5 text-center flex flex-col space-y-2">
+            <h2 className="text-3xl text-black">User Testing Is Starting Soon!</h2>
+            <p className="mx-auto">
+              A closed Pre-Alpha will start within the next two months.
+              In this first iteration of testing we'll be focusing on the pupil database, user system and the initial design and feel of the TAMIS Staff Portal.
+            </p>
+            <p>
+              Pre-Alpha v0.1.0 is invite only for the most part but if you wish to be considered please contact Henry Bersey at <Link href="mailto:Henry.Bersey@tamisapp.com"><a className="hover:text-primary">Henry.Bersey@tamisapp.com</a></Link>.
             </p>
           </div>
-
         </section>
 
       </main>
 
-    </div>
+    </div >
   )
 }
